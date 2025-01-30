@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูยำ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf5e6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .menu-item {
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .ingredients, .recipe {
+            text-align: left;
+            font-size: 16px;
+            padding: 10px;
+            background: #ffecb3;
+            border-radius: 5px;
+        }
+        .recipe {
+            background: #ffe082;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1><a href="main.html" style="color: white; text-decoration: none;">เมนูยำ</a></h1>
+        </header>
+        
+
+    <div class="menu-list">
+        <div class="menu-item">
+            <img src="yumvun.webp" alt="รูปยำ 1">
+            <p><strong>ยำวุ้นเส้น</strong></p>
+            <p class="ingredients">วัตถุดิบ: 1. วุ้นเส้น 100 กรัม, 2. หมูสับ 100 กรัม, 3. กุ้ง 50 กรัม, 4. มะเขือเทศ 50 กรัม, 5. น้ำปลา 2 ช้อนโต๊ะ, 6. น้ำตาล 1 ช้อนชา, 7. น้ำมะนาว 2 ช้อนโต๊ะ</p>
+            <p class="recipe">วิธีทำ: 1. ลวกวุ้นเส้น หมูสับ และกุ้งจนสุก 2. ผสมเครื่องปรุงทั้งหมดให้เข้ากัน 3. ใส่วุ้นเส้น หมูสับ กุ้ง และผัก คลุกเคล้าให้เข้ากัน 4. จัดใส่จานพร้อมเสิร์ฟ</p>
+        </div>
+        <div class="menu-item">
+            <img src="yumtala.webp" alt="รูปยำ 2">
+            <p><strong>ยำทะเล</strong></p>
+            <p class="ingredients">วัตถุดิบ: 1. กุ้ง 100 กรัม, 2. ปลาหมึก 100 กรัม, 3. หอยแมลงภู่ 50 กรัม, 4. หอมแดง 30 กรัม, 5. น้ำปลา 2 ช้อนโต๊ะ, 6. น้ำตาล 1 ช้อนชา, 7. น้ำมะนาว 2 ช้อนโต๊ะ</p>
+            <p class="recipe">วิธีทำ: 1. ลวกกุ้ง ปลาหมึก และหอยแมลงภู่จนสุก 2. ผสมเครื่องปรุงให้เข้ากัน 3. ใส่เครื่องทะเลและหอมแดงลงไป คลุกเคล้าให้เข้ากัน 4. จัดใส่จานพร้อมเสิร์ฟ</p>
+        </div>
+        <div class="menu-item">
+            <img src="yumshell.jpg" alt="รูปยำ 3">
+            <p><strong>ยำหอยนางรม</strong></p>
+            <p class="ingredients">วัตถุดิบ: 1. หอยนางรม 100 กรัม, 2. หอมแดงซอย 30 กรัม, 3. พริกขี้หนูซอย 10 กรัม, 4. น้ำปลา 2 ช้อนโต๊ะ, 5. น้ำมะนาว 2 ช้อนโต๊ะ, 6. น้ำตาล 1 ช้อนชา</p>
+            <p class="recipe">วิธีทำ: 1. ล้างหอยนางรมให้สะอาด 2. ผสมเครื่องปรุงทั้งหมดให้เข้ากัน 3. ใส่หอยนางรมลงไป คลุกเคล้าให้เข้ากัน 4. จัดใส่จานพร้อมเสิร์ฟ</p>
+        </div>
+    </div>
+</body>
+</html>
