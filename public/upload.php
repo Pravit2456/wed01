@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
         } else {
             echo "<script>alert('เกิดข้อผิดพลาดในการอัปโหลดไฟล์');</script>";
         }
-    }
+    } 
 }
 
 $conn->close();
