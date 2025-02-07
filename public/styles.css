@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #f4a261;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -21,46 +21,63 @@ header h1 {
     font-size: 2rem;
 }
 
-.menu-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.menu-item {
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid #f4a261;
+.upload-form {
+    width: 70%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
     border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.menu-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.upload-form label {
     display: block;
-    margin: 0 auto;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
 }
 
-.menu-item p {
-    margin: 10px 0;
+.upload-form input, .upload-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.upload-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.upload-form input[type="file"] {
+    padding: 10px;
+}
+
+.upload-form input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #f4a261;
+    border: none;
+    border-radius: 5px;
+    color: white;
     font-size: 1.2rem;
-    color: #e76f51;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form input[type="submit"]:hover {
+    background-color: #e76f51;
 }
 
 footer {
     background-color: #264653;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 0.9rem;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 1rem;
 }

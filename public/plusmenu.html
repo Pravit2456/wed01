@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพิ่ม/แก้ไข เมนูอาหาร</title>
+</head>
+<body>
+    <header>
+        <h1>เพิ่ม/แก้ไข เมนูอาหาร</h1>
+    </header>
+    
+    <!-- ฟอร์มเพิ่ม/แก้ไขเมนู -->
+    <form action="save_menu.php" method="POST">
+        <label for="name">ชื่อเมนู:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="category">หมวดหมู่:</label>
+        <input type="text" name="category" id="category" required><br>
+
+        <label for="image">ลิงค์รูปภาพ:</label>
+        <input type="text" name="image" id="image" required><br>
+
+        <input type="submit" value="บันทึก">
+    </form>
+</body>
+</html>

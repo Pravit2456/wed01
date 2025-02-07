@@ -1,0 +1,49 @@
+<?php
+// ดึง ID จาก URL
+$id = $_GET['id'];
+
+// การเชื่อมต่อกับฐานข้อมูล
+$host = "localhost";
+$user = "root";
+$pass = "1234";
+$db = "thai_food";
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+// ตรวจสอบการเชื่อมต่อ
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// เขียนคำสั่ง SQL ดึงข้อมูลเมนูที่มี ID ตรงกับพารามิเตอร์ใน URL
+$sql = "SELECT * FROM menus WHERE id = $id";
+$result = $conn->query($sql);
+
+$menu = $result->fetch_assoc();  // ดึงข้อมูลของเมนูที่เลือก
+
+$conn->close();
+?>
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดเมนู</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>รายละเอียดเมนู</h1>
+    </header>
+
+    <div class="menu-detail">
+        <img src="<?php echo $menu['image']; ?>" alt="<?php echo $menu['name']; ?>">
+        <h2><?php echo $menu['name']; ?></h2>
+        <p><strong>หมวดหมู่:</strong> <?php echo $menu['category']; ?></p>
+        <p><strong>วัตถุดิบ:</strong> <?php echo $menu['ingredients']; ?></p>
+        <p><strong>วิธีการทำ:</strong> <?php echo $menu['recipe']; ?></p>
+    </div>
+
+</body>
+</html>
